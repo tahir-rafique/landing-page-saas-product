@@ -1,9 +1,4 @@
-/* ===========================================
-   POSITIVUS — Custom Styles
-   Built on top of Tailwind. CSS variables drive
-   colors, spacing, radii, and typography so the
-   entire theme can be retuned in one place.
-   =========================================== */
+/* global styles */
 
 :root {
   /* Brand palette */
