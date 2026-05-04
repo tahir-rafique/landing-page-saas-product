@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Positivus | Digital Marketing Agency for SaaS Growth</title>
+  <meta name="description"
+    content="Positivus is a results-driven digital marketing agency helping SaaS and B2B businesses scale through SEO, PPC, social media, email marketing, content, and analytics." />
+  <meta name="keywords"
+    content="digital marketing, SaaS marketing agency, SEO, PPC, social media marketing, email marketing, content creation, analytics, Positivus" />
+  <meta name="author" content="Positivus" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://positivus.example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Positivus | Digital Marketing Agency for SaaS Growth" />
+  <meta property="og:description"
+    content="Helping SaaS businesses grow online through SEO, PPC, social media, email, content, and analytics." />
+  <meta property="og:url" content="https://positivus.example.com/" />
+  <meta property="og:image" content="https://positivus.example.com/images/og-cover.jpg" />
+  <meta property="og:site_name" content="Positivus" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Positivus | Digital Marketing Agency for SaaS Growth" />
+  <meta name="twitter:description"
+    content="Helping SaaS businesses grow online through SEO, PPC, social media, email, content, and analytics." />
+  <meta name="twitter:image" content="https://positivus.example.com/images/og-cover.jpg" />
+
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#191A23" />
+
+  <!-- Structured data: Organization schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Positivus",
+    "url": "https://positivus.example.com/",
+    "logo": "https://positivus.example.com/images/logo.svg",
+    "description": "Digital marketing agency helping SaaS and B2B businesses grow online.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1234 Main St",
+      "addressLocality": "Moonstone City",
+      "addressRegion": "Stardust State",
+      "postalCode": "12345"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-555-567-8901",
+      "contactType": "customer service",
+      "email": "info@positivus.com"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CDN with config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#B9FF66',
+            dark: '#191A23',
+            light: '#F3F3F3'
+          },
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ============================================ -->
+  <!-- ANALYTICS / TRACKING SCRIPT PLACEHOLDERS    -->
+  <!-- Replace G-XXXXXXXXXX with real measurement ID -->
+  <!-- ============================================ -->
+  <!-- Google Analytics 4 (placeholder) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <!-- Meta Pixel (placeholder) -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s){...}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  -->
+
+  <!-- Hotjar / Microsoft Clarity (placeholder) -->
+  <!-- Add your tracking script here -->
+</head>
+
+<body class="font-sans bg-white text-dark antialiased">
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container flex items-center justify-between py-6">
+      <a href="#" class="logo flex items-center gap-2" aria-label="Positivus home">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="#191A23" />
+          <path d="M9 18.5C9 13.8 12.8 10 17.5 10H23v5.5C23 20.2 19.2 24 14.5 24H9v-5.5z" fill="#B9FF66" />
+        </svg>
+        <span class="text-xl font-medium">Positivus</span>
+      </a>
+
+      <nav class="nav-desktop hidden lg:flex items-center gap-10" aria-label="Primary">
+        <a href="#services">About us</a>
+        <a href="#services">Services</a>
+        <a href="#case-studies">Use Cases</a>
+        <a href="#process">Pricing</a>
+        <a href="#team">Blog</a>
+        <span data-button data-variant="outline" data-text="Request a quote" data-href="#contact"></span>
+      </nav>
+
+      <button class="nav-toggle lg:hidden" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="mobile-nav lg:hidden" hidden>
+      <nav class="container flex flex-col gap-4 py-6" aria-label="Mobile">
+        <a href="#services">About us</a>
+        <a href="#services">Services</a>
+        <a href="#case-studies">Use Cases</a>
+        <a href="#process">Pricing</a>
+        <a href="#team">Blog</a>
+        <span data-button data-variant="outline" data-text="Request a quote" data-href="#contact"
+          data-block="true"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============== HERO ============== -->
+    <section class="hero">
+      <div class="container grid lg:grid-cols-2 gap-10 items-center py-16 lg:py-24">
+        <div class="hero-text">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-medium leading-tight mb-6">
+            Navigating the digital landscape for success
+          </h1>
+          <p class="text-base sm:text-lg leading-relaxed mb-8 max-w-lg">
+            Our digital marketing agency helps businesses grow and succeed online through a range of services including
+            SEO, PPC, social media marketing, and content creation.
+          </p>
+          <span data-button data-variant="dark" data-text="Book a consultation" data-href="#contact"></span>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <img src="images/hero-illustration.svg" alt="Illustration of digital marketing concepts" class="w-full h-auto" />
+        </div>
+      </div>
+
+      <!-- Brand bar -->
+      <div class="container">
+        <ul
+          class="brand-bar grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center py-6 lg:py-10 opacity-90">
+          <img src="images/amazon.svg" alt="Amazon" class="mx-auto h-8 object-contain" />
+          <img src="images/dribbble.svg" alt="Dribbble" class="mx-auto h-8 object-contain" />
+          <img src="images/hubspot.svg" alt="HubSpot" class="mx-auto h-8 object-contain" />
+          <img src="images/notion.svg" alt="Notion" class="mx-auto h-8 object-contain" />
+          <img src="images/netflix.svg" alt="Netflix" class="mx-auto h-8 object-contain" />
+          <img src="images/zoom.svg" alt="Zoom" class="mx-auto h-8 object-contain" />
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============== SERVICES ============== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="title-pill">Services</h2>
+          <p class="section-desc">
+            At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+            These services include:
+          </p>
+        </div>
+        <div id="servicesGrid" class="grid sm:grid-cols-2 gap-8 mt-12">
+          <!-- Service cards rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CTA BANNER ============== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-text">
+            <h3 class="text-2xl sm:text-3xl font-medium mb-4">Let's make things happen</h3>
+            <p class="mb-6 max-w-md">
+              Contact us today to learn more about how our digital marketing services can help your business grow and
+              succeed online.
+            </p>
+            <span data-button data-variant="dark" data-text="Get your free proposal" data-href="#contact"></span>
+          </div>
+          <div class="cta-illustration" aria-hidden="true">
+            <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+              <circle cx="160" cy="110" r="70" fill="#191A23" />
+              <circle cx="140" cy="100" r="8" fill="#B9FF66" />
+              <circle cx="180" cy="100" r="8" fill="#B9FF66" />
+              <path d="M138 130 Q160 145 182 130" stroke="#B9FF66" stroke-width="4" fill="none"
+                stroke-linecap="round" />
+              <path d="M260 50 L268 70 L290 70 L272 84 L280 106 L260 92 L240 106 L248 84 L230 70 L252 70 Z"
+                fill="#B9FF66" />
+              <path d="M60 160 L66 174 L82 174 L70 184 L76 198 L60 188 L44 198 L50 184 L38 174 L54 174 Z"
+                fill="#191A23" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CASE STUDIES ============== -->
+    <section id="case-studies" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="title-pill">Case Studies</h2>
+          <p class="section-desc">
+            Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+          </p>
+        </div>
+        <div id="caseStudies" class="case-studies grid lg:grid-cols-3 gap-0 mt-12">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== WORKING PROCESS ============== -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="title-pill">Our Working Process</h2>
+          <p class="section-desc">
+            Step-by-Step Guide to Achieving Your Business Goals
+          </p>
+        </div>
+        <div id="processList" class="process-list mt-12 flex flex-col gap-6">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== TEAM ============== -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="title-pill">Team</h2>
+          <p class="section-desc">
+            Meet the skilled and experienced team behind our successful digital marketing strategies
+          </p>
+        </div>
+        <div id="teamGrid" class="team-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <!-- Rendered by JS -->
+        </div>
+        <div class="text-center lg:text-right mt-10">
+          <span data-button data-variant="dark" data-text="See all team" data-href="#"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== TESTIMONIALS ============== -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="title-pill">Testimonials</h2>
+          <p class="section-desc">
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services
+          </p>
+        </div>
+      </div>
+      <div class="testimonials-wrapper mt-12">
+        <div class="container">
+          <div class="testimonials-track-wrapper">
+            <ul id="testimonialsTrack" class="testimonials-track" role="list">
+              <!-- Rendered by JS -->
+            </ul>
+          </div>
+          <div class="testimonials-controls">
+            <button id="prevTestimonial" class="ctrl-btn" aria-label="Previous testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <div id="testimonialDots" class="dots"></div>
+            <button id="nextTestimonial" class="ctrl-btn" aria-label="Next testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CONTACT ============== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="title-pill">Contact Us</h2>
+          <p class="section-desc">
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
+          </p>
+        </div>
+
+        <div class="contact-card mt-12">
+          <form id="contactForm" class="contact-form" novalidate>
+            <fieldset class="contact-toggle" aria-label="Contact reason">
+              <label class="radio">
+                <input type="radio" name="reason" value="say-hi" checked />
+                <span class="radio-dot"></span>
+                <span>Say Hi</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="reason" value="quote" />
+                <span class="radio-dot"></span>
+                <span>Get a Quote</span>
+              </label>
+            </fieldset>
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" required />
+              <small class="error" data-error-for="name"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" placeholder="Email" required />
+              <small class="error" data-error-for="email"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+              <small class="error" data-error-for="message"></small>
+            </div>
+
+            <span data-button data-variant="dark" data-text="Send Message" data-block="true" data-type="submit"></span>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-illustration" aria-hidden="true">
+            <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+              <path d="M160 40 L180 130 L270 150 L180 170 L160 260 L140 170 L50 150 L140 130 Z" fill="#191A23" />
+              <circle cx="240" cy="80" r="14" fill="#B9FF66" />
+              <circle cx="80" cy="240" r="10" fill="#B9FF66" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="logo flex items-center gap-2 text-white" aria-label="Positivus home">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#B9FF66" />
+            <path d="M9 18.5C9 13.8 12.8 10 17.5 10H23v5.5C23 20.2 19.2 24 14.5 24H9v-5.5z" fill="#191A23" />
+          </svg>
+          <span class="text-xl font-medium">Positivus</span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#services">About us</a>
+          <a href="#services">Services</a>
+          <a href="#case-studies">Use Cases</a>
+          <a href="#process">Pricing</a>
+          <a href="#team">Blog</a>
+        </nav>
+        <ul class="footer-social" aria-label="Social links">
+          <li><a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.5 0h4.37v1.92h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 7v7.46h-4.55V15.4c0-1.7-.03-3.88-2.36-3.88-2.36 0-2.72 1.85-2.72 3.76V22H7.72V8z" />
+              </svg></a></li>
+          <li><a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12z" />
+              </svg></a></li>
+          <li><a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22 5.92c-.74.33-1.53.55-2.36.65a4.13 4.13 0 0 0 1.81-2.27 8.2 8.2 0 0 1-2.6.99 4.1 4.1 0 0 0-7 3.74A11.65 11.65 0 0 1 1.4 4.66a4.1 4.1 0 0 0 1.27 5.48 4 4 0 0 1-1.85-.51v.05a4.1 4.1 0 0 0 3.29 4.02 4 4 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 18.29a11.6 11.6 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.69 0-.18 0-.36-.02-.54A8.34 8.34 0 0 0 22 5.92z" />
+              </svg></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-contact">
+          <span class="title-pill-dark">Contact us:</span>
+          <p>Email: info@positivus.com</p>
+          <p>Phone: 555-567-8901</p>
+          <p>Address: 1234 Main St<br />Moonstone City, Stardust State 12345</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" novalidate>
+          <label for="subscribeEmail" class="sr-only">Email</label>
+          <input type="email" id="subscribeEmail" name="subscribeEmail" placeholder="Email" required />
+          <span data-button data-variant="primary" data-text="Subscribe to news" data-type="submit"></span>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyYear"></span> Positivus. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
